@@ -33,12 +33,12 @@ const count = () => {
 };
 
 const resetTimer = () => {
+  minutes = 25;
+  seconds = 0;
+  cap     = 25;
   timerMinutes.innerHTML = cap === 25 ? cap : '0' + cap;
   timerSeconds.innerHTML = '00';
   tumbler.innerHTML = 'start';
-  minutes = 25,
-  seconds = 0,
-  cap     = 25,
   clearInterval(interval);
 };
 
